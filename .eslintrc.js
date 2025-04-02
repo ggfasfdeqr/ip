@@ -1,8 +1,7 @@
 module.exports = {
   root: true,
   env: {
-    node: true,
-    'vue/setup-compiler-macros': true
+    node: true
   },
   extends: [
     'plugin:vue/vue3-essential',
@@ -10,24 +9,18 @@ module.exports = {
     '@vue/typescript/recommended'
   ],
   parserOptions: {
-    parser: '@typescript-eslint/parser',
-    ecmaVersion: 2020
+    ecmaVersion: 2020,
+    parser: '@typescript-eslint/parser'
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'vue/multi-word-component-names': 'off',
-    '@typescript-eslint/no-unused-vars': ['error', { 
-      argsIgnorePattern: '^_',
-      varsIgnorePattern: '^_',
-      ignoreRestSiblings: true
-    }],
-    'vue/script-setup-uses-vars': 'error'
-  },
-  globals: {
-    defineProps: 'readonly',
-    defineEmits: 'readonly',
-    defineExpose: 'readonly',
-    withDefaults: 'readonly'
+    '@typescript-eslint/no-explicit-any': 'warn',
+    '@typescript-eslint/ban-types': ['error', {
+      types: {
+        '{}': false
+      },
+      extendDefaults: true
+    }]
   }
 } 
