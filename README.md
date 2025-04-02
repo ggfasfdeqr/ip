@@ -1,4 +1,4 @@
-# hello-world
+# ip-lookup
 
 ## Project setup
 ```
@@ -18,6 +18,10 @@ npm run build
 ### Lints and fixes files
 ```
 npm run lint
+```
+### Run tests
+```
+npm run test:unit
 ```
 
 ### Customize configuration
