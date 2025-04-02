@@ -1,4 +1,5 @@
 # ip-lookup
+This is a Vue.js application that provides an IP address lookup service with real-time timezone information. It's built with TypeScript and follows modern Vue 3 composition API patterns.
 
 ## Project setup
 ```
