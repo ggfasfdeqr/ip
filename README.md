@@ -1,4 +1,4 @@
-# hello-world
+# ip-lookup
 
 ## Project setup
 ```
